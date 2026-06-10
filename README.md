@@ -2,18 +2,18 @@
 
 # 🍦 THE KULFI & CO POS SYSTEM
 
-### ✨ Smart • Modern • Fast Billing Solution
+### Smart • Modern • Professional Billing Solution
 
 <img src="https://img.shields.io/badge/Version-v1.0-ff4da6?style=for-the-badge">
-<img src="https://img.shields.io/badge/Platform-Web%20POS-blue?style=for-the-badge">
-<img src="https://img.shields.io/badge/Status-Production%20Ready-success?style=for-the-badge">
-<img src="https://img.shields.io/badge/License-MIT-orange?style=for-the-badge">
+<img src="https://img.shields.io/badge/Status-Active-success?style=for-the-badge">
+<img src="https://img.shields.io/badge/POS-System-blue?style=for-the-badge">
+<img src="https://img.shields.io/badge/No%20Database-Required-orange?style=for-the-badge">
 
 ---
 
 ### 🍨 Traditional & Specialty Kulfi Billing System
 
-**Designed for Ice Cream Shops • Dessert Shops • Cafés • Small Businesses**
+**Built for Ice Cream Shops • Dessert Shops • Cafés • Small Businesses**
 
 </div>
 
@@ -21,86 +21,42 @@
 
 # 🌟 Overview
 
-**The Kulfi & Co POS System** is a modern Point of Sale solution designed specifically for dessert and ice cream businesses.
+The **Kulfi & Co POS System** is a modern Point of Sale (POS) solution designed specifically for dessert and ice cream businesses.
 
-The system provides a beautiful user interface, smart billing, receipt printing, product image management, sales reporting, and cashier-friendly workflows.
+This system provides:
 
----
+- Product Image Catalog
+- Fast Billing
+- Cash & Card Payments
+- Thermal Receipt Printing
+- Sales Reports
+- CSV Export
+- Item Management
+- Responsive Modern UI
 
-# 🎯 Key Highlights
-
-✅ Modern Responsive Dashboard
-
-✅ Beautiful Product Cards
-
-✅ Product Image Support
-
-✅ Smart Billing System
-
-✅ Cash & Card Payments
-
-✅ Auto Receipt Generation
-
-✅ Thermal Printer Support (80mm)
-
-✅ Sales Reports & Analytics
-
-✅ CSV Export
-
-✅ Reprint Bills
-
-✅ Discount Management
-
-✅ Cashier Management
-
-✅ No Database Required
+No database required.
 
 ---
 
-# 🍦 Product Management
+# ✨ Features
 
-### Rich In Flavors
+## 🍦 Product Management
 
-- Fruit n Nut Kulfi
-- Badam Kulfi
-- Fruit n Nut Choco Kulfi
-- Oreo Kulfi
-- Milo Kulfi
-- Nescafe Kulfi
+✅ Product Image Gallery
 
-### Seasonal Flavors
+✅ Add New Products
 
-- Duriyan Kulfi
-- Karutha Kulambaan Kulfi
-- Avacado Kulfi
-- Passion Fruit Kulfi
-- Jack Fruit Kulfi
-- Wood Apple Kulfi
+✅ Edit Products
 
-### Regular Pops
+✅ Hide/Delete Products
 
-- Milk Ice Pop
-- Faluda Ice Pop
-- 3 in 1 Ice Pop
-- Banana Ice Pop
-- BlueBerry Ice Pop
-- Mango Ice Pop
-- Strawberry Ice Pop
-- Kuluki Ice Pop
-- Choco Ice Pop
+✅ Category Management
 
-### Hot & Beverages
-
-- Nestea
-- Nescafe
-
-### Bakery
-
-- Croissant Spicy Bun
+✅ Dynamic Product Cards
 
 ---
 
-# 🍮 Smart Size Selection
+## 🍮 Smart Size Selection
 
 ### Watlapam
 
@@ -118,11 +74,11 @@ Medium
 Large
 ```
 
-Modern popup selection included.
+Modern Size Selection Popup Included.
 
 ---
 
-# 💳 Payment Methods
+## 💳 Payment System
 
 ### Cash Payment
 
@@ -151,27 +107,35 @@ Supported Banks:
 - Standard Chartered
 - HSBC
 - Citibank
-- NSB
-- RDB
+- National Savings Bank (NSB)
+- Regional Development Bank (RDB)
 - Sanasa Development Bank
 - Other
 
+Additional Features:
+
+✅ Card Last 4 Digits
+
+✅ Payment Tracking
+
 ---
 
-# 🏷 Discount System
+## 🏷 Discount System
+
+Supported Discounts:
 
 ```text
 0% Discount
 10% Discount
 ```
 
-Easy discount control directly from billing panel.
+Owner can change default discount from Settings.
 
 ---
 
-# 🧾 Professional Receipt Printing
+## 🧾 Professional Billing
 
-Features:
+### Receipt Features
 
 ✅ Auto Bill Number
 
@@ -179,6 +143,7 @@ Features:
 0001
 0002
 0003
+0004
 ```
 
 ✅ Real-Time Date & Time
@@ -189,13 +154,15 @@ Features:
 
 ✅ Card Details
 
-✅ Shop Information
+✅ Shop Details
 
-✅ Thermal Receipt Support
+✅ Thermal Receipt Format (80mm)
+
+✅ Reprint Bills
 
 ---
 
-# 📊 Sales Management
+## 📊 Sales Management
 
 ### Dashboard Statistics
 
@@ -206,33 +173,101 @@ Features:
 
 ### Reports
 
-- Daily Sales
-- Sales History
-- CSV Export
-- Reprint Receipts
+✅ Daily Sales
+
+✅ Sales History
+
+✅ CSV Export
+
+✅ Receipt Reprint
+
+---
+
+# 🍨 Available Products
+
+## Rich In Flavors
+
+- Fruit n Nut Kulfi
+- Badam Kulfi
+- Fruit n Nut Choco Kulfi
+- Oreo Kulfi
+- Milo Kulfi
+- Nescafe Kulfi
+
+---
+
+## Seasonal Flavors
+
+- Duriyan Kulfi
+- Karutha Kulambaan Kulfi
+- Avacado Kulfi
+- Passion Fruit Kulfi
+- Jack Fruit Kulfi
+- Wood Apple Kulfi
+
+---
+
+## Regular Pops
+
+- Milk Ice Pop
+- Faluda Ice Pop
+- 3 in 1 Ice Pop
+- Banana Ice Pop
+- BlueBerry Ice Pop
+- Mango Ice Pop
+- Strawberry Ice Pop
+- Kuluki Ice Pop
+- Choco Ice Pop
+
+---
+
+## Hot & Beverages
+
+- Nestea
+- Nescafe
+
+---
+
+## Bakery
+
+- Croissant Spicy Bun
+
+---
+
+## Desserts
+
+- Watlapam
+- Custard Pudding
 
 ---
 
 # ⚙️ Shop Configuration
 
+### Shop Information
+
 ```text
 THE KULFI & CO
 
-68A, Main Street,
+68A, Main Street
 Nintavur - 25
 
 ☎ 0788245424
 ☎ 0760766195
 ```
 
-Customizable:
+### Editable Settings
 
-- Shop Name
-- Phone Numbers
-- Address
-- Cashier Name
-- Default Discount
-- Receipt Message
+✅ Shop Name
+
+✅ Phone Number
+
+✅ Address
+
+✅ Cashier Name
+
+✅ Default Discount
+
+✅ Receipt Message
 
 ---
 
@@ -256,53 +291,16 @@ THE_KULFI_AND_CO_POS
 │
 ├── README.md
 │
-└── START_POS
-```
-
----
-
-# 🚀 Getting Started
-
-## Windows
-
-```text
-Double Click
-
-START_POS_WINDOWS.bat
-```
-
-## Mac
-
-```text
-Double Click
-
-THE KULFI & CO POS.app
-```
-
-OR
-
-```bash
-open index.html
-```
-
----
-
-# 🖨 Thermal Printer Setup
-
-Recommended Settings:
-
-```text
-Headers & Footers : OFF
-Margins           : None
-Scale             : 100%
-Paper Size        : 80mm
+├── START_POS_WINDOWS.bat
+│
+└── THE KULFI & CO POS.app
 ```
 
 ---
 
 # 📸 Product Images
 
-Place images inside:
+Place product images inside:
 
 ```text
 images/
@@ -316,7 +314,58 @@ watlapam.jpg
 custard_pudding.jpg
 ```
 
-System automatically displays uploaded product images.
+Then enter the filename inside Item Management.
+
+The system automatically displays the uploaded image.
+
+---
+
+# 🚀 Getting Started
+
+## Windows
+
+Extract ZIP File
+
+Double Click:
+
+```text
+START_POS_WINDOWS.bat
+```
+
+OR
+
+```text
+index.html
+```
+
+---
+
+## Mac
+
+Double Click:
+
+```text
+THE KULFI & CO POS.app
+```
+
+OR
+
+```bash
+open index.html
+```
+
+---
+
+# 🖨 Thermal Printer Setup
+
+Recommended Chrome Settings:
+
+```text
+Headers & Footers : OFF
+Margins           : None
+Scale             : 100%
+Paper Size        : 80mm
+```
 
 ---
 
@@ -334,31 +383,31 @@ System automatically displays uploaded product images.
 
 # 🎨 UI Features
 
-✨ Glassmorphism Design
-
 ✨ Modern Pink Theme
 
-✨ Mobile Responsive
+✨ Responsive Design
 
 ✨ Product Image Cards
 
-✨ Fast Billing Workflow
+✨ Live Dashboard
+
+✨ Smart Billing Interface
 
 ✨ Professional Receipt Layout
 
-✨ Dashboard Analytics
+✨ Mobile Friendly
 
 ---
 
-# 📈 Future Enhancements
+# 🔮 Future Improvements
 
-- SQLite Database
+- SQLite Database Integration
 - Cloud Backup
 - Inventory Management
-- Multi Cashier Login
-- QR Payments
+- QR Payment Support
 - Customer Loyalty System
 - Mobile Application
+- Multi Cashier Login
 
 ---
 
@@ -384,7 +433,7 @@ GitHub: https://github.com/mohamedahshaan
 
 ---
 
-⭐ Star this repository if you found it useful ⭐
+⭐ If you found this project useful, consider giving it a Star ⭐
 
 Made with ❤️ by Mohamed Ahshaan
 
