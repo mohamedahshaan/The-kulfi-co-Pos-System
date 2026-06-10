@@ -1,0 +1,5 @@
+Put product images in this folder.
+Example filenames used by default:
+mango_ice_pop.jpg
+watlapam.jpg
+custard_pudding.jpg

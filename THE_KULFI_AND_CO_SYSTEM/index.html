@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>THE KULFI & CO POS</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="topbar no-print">
+  <div class="brand">
+    <div class="logo-letter">K</div>
+    <div>
+      <h1 id="headerShopName">THE KULFI & CO</h1>
+      <p>Premium POS Billing System</p>
+    </div>
+  </div>
+  <nav class="nav">
+    <button onclick="showPage('billing')">Billing</button>
+    <button onclick="showPage('items')">Items</button>
+    <button onclick="showPage('sales')">Sales</button>
+    <button onclick="showPage('settings')">Settings</button>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="stats no-print">
+    <div class="stat"><div class="label">Today Sales</div><div class="value" id="todaySales">Rs.0</div></div>
+    <div class="stat"><div class="label">Today Bills</div><div class="value" id="todayBills">0</div></div>
+    <div class="stat"><div class="label">Active Items</div><div class="value" id="activeItems">0</div></div>
+    <div class="stat"><div class="label">Best Item</div><div class="value small-value" id="bestItem">No sales yet</div></div>
+  </section>
+
+  <section id="billingPage" class="page">
+    <div class="pos-grid no-print">
+      <section class="panel">
+        <div class="toolbar">
+          <input id="searchBox" placeholder="Search item..." oninput="renderItems()">
+          <select id="categoryFilter" onchange="renderItems()">
+            <option value="">All Categories</option>
+          </select>
+        </div>
+        <div class="items-grid" id="itemsGrid"></div>
+      </section>
+
+      <aside class="panel bill-panel">
+        <div class="bill-head">
+          <h2>Current Order</h2>
+          <div class="bill-no">#<span id="billNo">0001</span></div>
+        </div>
+        <div class="clock" id="clock"></div>
+        <div id="cart"><div class="cart-empty">Select items to create bill 🧾</div></div>
+
+        <div class="total-box">
+          <div class="total-line"><span>Sub Total</span><span>Rs.<span id="subTotal">0</span></span></div>
+
+          <div class="cashline">
+            <select class="field" id="discountPercent" onchange="renderCart()">
+              <option value="0">Discount 0%</option>
+              <option value="10">Discount 10%</option>
+            </select>
+            <input class="field" id="discountAmount" readonly placeholder="Discount Amount">
+          </div>
+
+          <div class="total-line grand"><span>Grand Total</span><span>Rs.<span id="grandTotal">0</span></span></div>
+
+          <div class="cashline">
+            <select class="field" id="paymentMethod" onchange="togglePaymentFields()">
+              <option value="Cash">Cash Payment</option>
+              <option value="Card">Card Payment</option>
+            </select>
+            <input class="field" id="cashInput" type="number" placeholder="Cash Received" oninput="updateBalance()">
+          </div>
+
+          <div id="cardFields" style="display:none;margin-top:9px">
+            <div class="cashline">
+              <select class="field" id="cardBank"></select>
+              <input class="field" id="cardLast4" maxlength="4" inputmode="numeric" placeholder="Last 4 Digits">
+            </div>
+          </div>
+
+          <div class="cashline lastline">
+            <input class="field" id="balanceBox" readonly placeholder="Balance">
+            <input class="field" id="cashierName" placeholder="👤 Cashier Name">
+          </div>
+        </div>
+
+        <button class="btn btn-print" onclick="saveAndPrint()">🧾 Save & Print Bill</button>
+        <button class="btn btn-clear" onclick="clearCart()">Clear Order</button>
+      </aside>
+    </div>
+  </section>
+
+  <section id="itemsPage" class="page hidden">
+    <section class="panel">
+      <h2>Add New Item</h2>
+      <div class="form-grid">
+        <input class="field" id="newName" placeholder="Item Name">
+        <input class="field" id="newCategory" placeholder="Category">
+        <input class="field" id="newPrice" type="number" placeholder="Price">
+        <input class="field" id="newEmoji" placeholder="Emoji e.g. 🍦">
+        <input class="field" id="newImage" placeholder="Image filename e.g. mango.jpg">
+        <button class="btn" onclick="addNewItem()">Add Item</button>
+      </div>
+      <p class="hint">Images folder-la image podunga. Example: images/mango.jpg. Then item image filename field-la <b>mango.jpg</b> podunga.</p>
+    </section>
+
+    <section class="panel gap-top">
+      <h2>Update / Delete Items</h2>
+      <div id="manageItems"></div>
+    </section>
+  </section>
+
+  <section id="salesPage" class="page hidden">
+    <section class="panel">
+      <h2>Sales Report</h2>
+      <button class="btn btn-green" onclick="exportCSV()">Download Sales CSV</button>
+      <button class="btn btn-danger" onclick="clearSales()">Clear Sales</button>
+      <div class="table-wrap">
+        <table class="table" id="salesTable"></table>
+      </div>
+    </section>
+  </section>
+
+  <section id="settingsPage" class="page hidden">
+    <section class="panel">
+      <h2>Shop & Receipt Settings</h2>
+      <div class="settings-grid">
+        <label>Shop Name<input class="field" id="setShopName"></label>
+        <label>☎ Phone Number<input class="field" id="setPhone"></label>
+        <label>📍 Address<input class="field" id="setAddress"></label>
+        <label>👤 Default Cashier<input class="field" id="setCashier"></label>
+        <label>Default Discount
+          <select class="field" id="setDiscount">
+            <option value="0">0% - No Discount</option>
+            <option value="10">10% Discount</option>
+          </select>
+        </label>
+        <label class="wide">Tagline<input class="field" id="setTagline"></label>
+        <div class="wide"><button class="btn btn-print" onclick="saveSettings()">Save Settings</button></div>
+      </div>
+    </section>
+  </section>
+</main>
+
+<div id="sizeModal" class="size-modal no-print" style="display:none;">
+  <div class="size-box">
+    <button class="size-close" onclick="closeSizeModal()">×</button>
+    <h2 id="sizeTitle">Choose Size</h2>
+    <p>Select size customer requested</p>
+    <div id="sizeButtons" class="size-buttons"></div>
+  </div>
+</div>
+
+<div id="receiptArea" class="receipt" style="display:none;"><pre id="receiptText"></pre></div>
+
+<script src="assets/app.js"></script>
+</body>
+</html>
